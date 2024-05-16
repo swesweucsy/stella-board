@@ -1,0 +1,30 @@
+
+/* .mat-grid-list{
+   margin: 20px;
+}
+.mat-grid-list{
+   margin: 0px;
+} */
+/* .mat-grid-tile-content{
+   align-items: unset;
+   margin-top : 0px;
+   margin-left: 20px;
+} */
+
+.main-card {
+   padding: 0;
+   margin: auto 20px;
+}
+.btn-create-task button{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: initial;
+   margin-bottom: 10px;
+}
+mat-card{
+   background-color: #FFFFFF !important;
+   margin-bottom: 5px;
+   text-align: justify;
+   width: 85%;
+   min-width: 85%;
+}

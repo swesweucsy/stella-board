@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html {
+    background-image: url(./assets/images/bt21.jpg);
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.page-container {
+    /* margin: 50px 200px 200px 200px; */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.page-title {
+    font-weight: extra-bold;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: justify;
+    padding: 15px;
+}

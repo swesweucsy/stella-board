@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Add New Task Board </h1>
+<mat-dialog-content [formGroup]="form" class="dialog-content">
+    <mat-form-field appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput
+            placeholder="Enter title"
+            formControlName="title"
+            [(ngModel)]="data.title">
+        <mat-error *ngIf="!title">This field is required</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Choose Color</mat-label>
+        <mat-select [(ngModel)]="selectedColor">
+            <mat-option>Clear</mat-option>
+            <mat-option *ngFor="let c of colors" [value]="c.value">
+                {{ c.name }}
+            </mat-option>
+        </mat-select>
+      </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button class="mat-flat-button" (click)="close()">Close</button>
+    <button class="mat-flat-button mat-primary" (click)="save()" >Save</button>
+</mat-dialog-actions>

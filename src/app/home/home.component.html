@@ -1,0 +1,12 @@
+<div class="main-card">
+    <div class="btn-create-task">
+        <button mat-raised-button color="primary" (click)="openDialog()">+ {{ addKanban }}</button>
+    </div>
+
+    <mat-card *ngFor="let tb of taskBoards"
+            [style.background-color] = "tb.color"
+            routerLink="/taskboards/{{tb.id}}" routerLinkActive="router-link-active" >
+       {{ tb.title }}
+    </mat-card>
+
+</div>
